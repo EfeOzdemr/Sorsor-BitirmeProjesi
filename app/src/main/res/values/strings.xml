@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">sorsor</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_soruAra">Soru Ara</string>
+    <string name="action_refresh">Yenile</string>
+    <string name="title_activity_soru_hazirlama">SoruHazirlama</string>
+    <string name="title_activity_den">Sign in</string>
+
+
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <!-- Keyler ile alakalı stringler aşağıda -->
+    <!-- Format: SenderActivity_ReceiverActivity_action_relatedObject -->
+    <string name="Anasayfa_SoruHazirlama_newQuestion_user" translatable="false">1</string>
+    <string name="SoruHazirlama_SoruPreview1_renderNewQuestion_question" translatable="false">2</string>
+    <string name="SoruPreview1_Anasayfa_newQuestion_question" translatable="false">3</string>
+    <string name="x_Profil_getUserProfile_user" translatable="false">4</string>
+    <string name="Profile_Profile_getList_postsOfQuestions" translatable="false">5</string>
+    <string name="x_PhotoViewing_showPhoto_question">6</string>
+    <string name="x_TopicActivity_newQuestion_question">7</string>
+    <string name="x_TopicActivity_newQuestion_answers">8</string>
+    <string name="Question_Respond_newAnswer_question">9</string>
+    <string name="Question_Respond_newAnswer_user">10</string>
+    <string name="x_TopicActivity_newQuestion_user">11</string>
+    <string name="Respond_Question_newAnswer_answer">12</string>
+    <string name="Login_Anasayfa_getUser_user">13</string>
+    <string name="x_Profile_getSomeone_user">14</string>
+    <string name="Profile_Profile_isQuestionList_boolean">15</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="title_activity_respond">Respond</string>
+
+    <!-- WEB SERVICE -->
+    <string name="wsAc_login" translatable="false">LOGIN</string>
+    <string name="wsAc_getMyProfile" translatable="false">ME</string>
+    <string name="wsAc_showSomeone" translatable="false">PROFILE</string>
+    <string name="wsAc_getProfilePosts" translatable="false">MYPOSTS</string>
+    <string name="wsAc_getAnasayfa" translatable="false">FEED</string>
+    <string name="wsAc_getAnswers" translatable="false">ANSWERS</string>
+    <string name="wsAc_postAnswer" translatable="false">SENDANSWER</string>
+    <string name="wsAc_postQuestion" translatable="false">SENDQUESTION</string>
+
+    <string name="wsRC_login" translatable="false">1</string>
+    <string name="wsRC_getMyProfile" translatable="false">2</string>
+    <string name="wsRC_showSomeone" translatable="false">3</string>
+    <string name="wsRC_getProfilePosts" translatable="false">4</string>
+    <string name="wsRC_getAnasayfa" translatable="false">5</string>
+    <string name="wsRC_getAnswers" translatable="false">6</string>
+    <string name="wsRC_postAnswer" translatable="false">7</string>
+    <string name="wsRC_postQuestion" translatable="false">8</string>
+
+    <string name="ws_login" translatable="false">http://sorularavel.azurewebsites.net/api/auth/login</string>
+    <string name="ws_getMyProfile" translatable="false">http://sorularavel.azurewebsites.net/api/users/me</string>
+    <string name="getUserProfile" translatable="false">http://sorularavel.azurewebsites.net/api/users/</string>
+    <string name="ws_ProfilePosts" translatable="false">/posts/</string>
+    <string name="ws_getAnasayfa" translatable="false">http://sorularavel.azurewebsites.net/api/questions</string>
+    <string name="ws_getAnswers" translatable="false">http://sorularavel.azurewebsites.net/api/questions/</string>
+    <string name="ws_postAnswer" translatable="false">http://sorularavel.azurewebsites.net/api/answers</string>
+    <string name="ws_postQuestion" translatable="false">http://sorularavel.azurewebsites.net/api/questions</string>
+
+    <!-- SHAREDPREFERENCE -->
+    <string name="shared_key" translatable="false">bitirme.sorsor.key</string>
+    <string name="auth_token" translatable="false">sorsor.authtoken</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="responses">responses</string>
+    <string name="likes">likes</string>
+
+
+</resources>

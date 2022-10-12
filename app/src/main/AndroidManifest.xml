@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bitirme.sorsor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Anasayfa"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.SoruHazirlama" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PostViewingActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".activity.LoadingScreenActivity"
+            android:theme="@style/Theme.Transparent">
+
+        </activity>
+        <activity
+            android:name=".activity.QuestionActivity"
+            android:label="@string/title_activity_question"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Respond"
+            android:label="@string/title_activity_respond"
+            android:parentActivityName=".activity.QuestionActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.QuestionActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileCoordinatorL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <RelativeLayout
+                android:id="@+id/profile_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="25dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_ProfilePic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/adam" />
+
+                <TextView
+                    android:id="@+id/profile_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_ProfilePic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Mert Yüksel"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/profile_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_Name"
+                    android:layout_centerHorizontal="true"
+                    android:password="false"
+                    android:text="İstanbul Üniversitesi" />
+
+                <LinearLayout
+                    android:id="@+id/profile_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:weightSum="0.99">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33">
+
+                        <TextView
+                            android:id="@+id/profile_UserLikeCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="134"
+                            android:textAlignment="center"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/profile_TxtUserLikeCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/profile_UserLikeCount"
+                            android:text="Likes"
+                            android:textAlignment="center" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/profile_TxtUserLikeCount"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/profile_UserLikeCount"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="12dp"
+                            android:background="#7dbcaaa4" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/profile_questionsRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33">
+
+                        <TextView
+                            android:id="@+id/profile_UserQuestionCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="23"
+                            android:textAlignment="center"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/profile_TxtUserQuestionCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/profile_UserQuestionCount"
+                            android:text="Questions"
+                            android:textAlignment="center" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/profile_TxtUserQuestionCount"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/profile_UserQuestionCount"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="12dp"
+                            android:background="#7dbcaaa4" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/profile_responsesRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33">
+
+                        <TextView
+                            android:id="@+id/profile_UserAnswerCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="234234"
+                            android:textAlignment="center"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/profile_TxtUserAnswerCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/profile_UserAnswerCount"
+                            android:text="Answers"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/profile_info"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="60dp"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/profile_UserGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_gender_male_white_48dp"
+                            app:backgroundTint="@android:color/holo_red_light"
+                            app:fabSize="mini" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/profile_UserAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            app:backgroundTint="@android:color/holo_red_light"
+                            app:fabSize="mini">
+                        </android.support.design.widget.FloatingActionButton>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/profile_UserExam"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            app:backgroundTint="@android:color/holo_red_light"
+                            app:fabSize="mini">
+
+                        </android.support.design.widget.FloatingActionButton>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/profile_setProfileInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@android:drawable/ic_menu_manage"
+                            app:backgroundTint="@android:color/holo_red_light"
+                            app:fabSize="mini">
+                        </android.support.design.widget.FloatingActionButton>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/profile_swipeUp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:background="#40ffffff"
+                android:src="@drawable/ic_vertical_align_top_white_24dp"
+                app:layout_collapseMode="parallax" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_profile" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Respond"
+    tools:showIn="@layout/activity_respond">
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photo_respond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"
+        android:src="@drawable/geo1"
+        android:scaleType="center"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edit_respond"
+        android:elevation="10dp"
+        android:textColor="@android:color/white"
+        android:hint="Type your comment here"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#8c1a1616" />
+
+    <com.victor.ringbutton.RingButton
+        app:ringbutton_upText="Fotoğraf Çek"
+        app:ringbutton_downText="Galeriden Al"
+        app:ringbutton_upDrawable="@drawable/ic_photo_camera_black_24dp"
+        app:ringbutton_downDrawable="@drawable/ic_photo_library_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ring_respond"
+        android:layout_gravity="center" />
+
+</FrameLayout>
